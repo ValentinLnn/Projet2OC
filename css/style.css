@@ -1,0 +1,228 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+}
+body {
+    margin:0;
+    padding:0;
+}
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+header {
+    display:flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    height: 79px;
+    margin:auto;
+}
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.navbar .nav-links ul {
+    display:flex;
+    margin:0;
+    padding:0;
+}
+.navbar .nav-links li {
+    margin: 0 30px;
+    padding-top:14px;
+    border-top:2px solid transparent;  
+}
+.navbar .nav-links li:hover {
+    border-color:#0065FC;
+    color:#0065FC;
+}
+.logotitre{
+    padding: 30px 50px 30px 50px;
+}
+a img{
+    height: 19px;
+}
+.main-container {
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin:30px auto auto auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.hebergements-and-populaires section.hebergements {
+    gap:30px;
+}
+.hebergements-and-populaires section .section-see-more{
+    margin: 0;
+}
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
+    padding:30px;
+}
+
+.hebergements-cards{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.hebergements-cards .card {
+    display:flex;
+    flex-direction: column;
+    margin-top: 33px;
+    width: 243px;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 30px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 134px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content, .hebergements-cards .card-content  {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+/****** Hebergements & Populaires selectors ***********/
+
+.populaires-title, .hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.populaires-cards .card-title, .hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle, .hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating, .hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+}
