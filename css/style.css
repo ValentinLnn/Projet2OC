@@ -7,6 +7,11 @@ body {
     margin:0;
     padding:0;
 }
+.espace{
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+}
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -171,7 +176,7 @@ display: flex;
 }
 .Infobar h3{
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 400;
 }
 .card {
     background-color: white;
@@ -183,11 +188,16 @@ display: flex;
 .card img {
     object-fit: cover;
 }
-
+.card-activite img {
+    object-fit: cover;
+}
 .card-title {
     font-size: 16px;
 }
-
+.card-title-activite {
+    font-size: 16px;
+    padding: 20px 19px;
+}
 .euro {
     font-weight: 700;
 }
@@ -219,18 +229,16 @@ display: flex;
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    padding:30px;
 }
 
 .hebergements-cards{
     display:flex;
-    justify-content: space-between;
     flex-wrap:wrap;
+    gap:26px;
 }
 .hebergements-cards .card {
     display:flex;
     flex-direction: column;
-    margin-top: 33px;
     width: 243px;
 }
 
@@ -240,8 +248,6 @@ display: flex;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
-
 
 /****** Populaires ***********/
 .populaires {
@@ -287,8 +293,30 @@ display: flex;
     margin-bottom: 5px;
 }
 
-
-
+.activites{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    gap: 30px;
+}
+.activite-card {
+    display:flex;
+    gap: 30px;
+}
+.card-activite {
+    height: 439px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+}
+.activite-card a {
+    width: 100%;
+}
+.card-activite img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 380px;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
