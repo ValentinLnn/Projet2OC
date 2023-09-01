@@ -250,7 +250,6 @@ align-items: center;
 .hebergements-cards .card {
     display:flex;
     flex-direction: column;
-    width: calc((100%/3)- 26px);
 }
 
 .hebergements-cards img {
